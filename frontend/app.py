@@ -54,3 +54,7 @@ if st.button("Predict"):
 
 response = requests.post(BACKEND_URL, json=input_data)
 
+response = requests.post(BACKEND_URL, json=input_data)
+
+st.write("Status:", response.status_code)
+st.write("Response:", response.text)

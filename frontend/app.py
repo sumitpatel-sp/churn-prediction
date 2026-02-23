@@ -5,7 +5,7 @@ import requests
 
 st.title("Customer Churn Prediction")
 
-BACKEND_URL = "https://churn-prediction-production-8fc5.up.railway.app/predict"
+BACKEND_URL = "http://localhost:8000/predict"
 
 
 def user_input():

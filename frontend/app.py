@@ -5,7 +5,7 @@ import requests
 
 st.title("Customer Churn Prediction")
 
-BACKEND_URL = "http://127.0.0.1:8000/predict"
+BACKEND_URL = "churn-prediction-production-8fc5.up.railway.app"
 
 
 def user_input():
@@ -54,5 +54,3 @@ if st.button("Predict"):
 
 response = requests.post(BACKEND_URL, json=input_data)
 
-st.write("Status:", response.status_code)
-st.write("Response:", response.text)
